@@ -1,0 +1,164 @@
+1. Write a function that converts a temperature in Celsius to Fahrenheit.
+   sol: 
+        function convert(celsius) {
+            return (celsius * 9 / 5) + 32;
+        }
+
+        let celsiusTemp = 25;
+        let fahrenheitTemp = convert(celsiusTemp);
+        console.log(`${celsiusTemp}°C is like ${fahrenheitTemp}°F`);  
+
+2)Write a function that checks if a given number is positive, negative, or zero. 
+    sol: 
+    function check(num) {
+    if (num > 0) {
+        return "The number is positive.";
+    } else if (num < 0) {
+        return "The number is negative.";
+    } else {
+        return "The number is zero.";
+    }
+}
+
+let num = -5;
+let result = check(num);
+console.log(result);
+
+3.Extract a portion of a string using the substring method.
+sol:
+let str="hello i am Shivaji maharaj";
+console.log(str.substring(5,7))
+
+4.Remove leading and trailing whitespaces from a string and find before and after
+length of the given string.
+sol:
+
+function remove(str) {
+
+    let beforeLength = str.length;
+    let trimmedStr = str.trim();
+    let afterLength = trimmedStr.length;
+
+    return {
+        before: beforeLength,
+        after: afterLength
+    };
+}
+
+let myString = "   Hello, World!   ";
+let result = remove(myString);
+console.log(`Length before: ${result.before}, Length after: ${result.after}`);
+
+5.create a person object, Access and print the "name" and "age" properties of the
+"person" object.
+sol:
+let person={
+  name:"Shivaji",
+  age:21
+}
+console.log(person)
+console.log(person.name)
+console.log(person.age)
+
+6.Create an object with properties representing the days of the week. Write a loop
+to iterate through these properties and print their values.
+sol:
+ 
+let daysofweek={
+       day1:"Monday",
+       day2:"tuesday",
+       day3:"wednesday",
+       day4:"thursday",
+       day5:"fridayday",
+       day6:"satday",
+       day7:"sunday",
+}
+for(let day in daysofweek){
+console.log(daysofweek[day]);
+}
+
+7. How do you flatten a nested array in JavaScript?
+sol:
+
+let nestedArray = [1, [2, [3, [4]], 5]];
+let flatArray = nestedArray.flat(Infinity); 
+console.log(flatArray); 
+
+8.How do you remove a specific element from an array?
+sol:
+
+let colors=["blue","green","orange","yellow"];
+colors.pop()
+colors.shift()
+console.log(colors)
+console.log(colors.splice(1,2)))
+
+9. How do you check if an array contains a specific value?
+sol:
+
+let fruits = ["apple", "banana", "mango"];
+let check = fruits.indexOf("mango") !== -1;
+console.log(check);
+
+10.Add a New Element
+Create a new <p> element with the text "This is a new paragraph." and append it to
+a <div> element with the id "container".
+sol:
+
+<div class="container">hello people</div>
+
+<script>
+var newEle=document.createElement("p")
+console.log(newEle)
+newEle.innerHTML="This is a new paragraph"
+
+var currdiv=document.getElementByID("container");
+if(currdiv){
+ currdiv.appenChild(newEle)
+
+}
+</script>
+
+11. Select by ID
+Select the element with the ID "my Element" and change its text content to "I was
+selected by ID."
+sol:
+
+<div id="my Element">hello welcome</div>
+
+<script>
+var res=document.getElementById("my Element")
+res.innerHTML="I was selected by ID"
+console.log(res)
+</script>
+
+12.write js code age is greater than 16 and the owns Car variable is true, the if
+block will run. The message printed to the console will be "sathya is old enough to
+drive and has his own car."
+sol:
+
+let age = 18; 
+let ownsCar = true; 
+
+if (age > 16 && ownsCar) {
+    console.log("Sathya is old enough to drive and has his own car.");
+}
+
+13.Make a "Good Night" greeting if the hour is greter than 21:00:
+solo:
+
+let now = new Date();
+let currentHour = now.getHours();
+
+if (currentHour > 21) {
+    console.log("Good Night");
+}
+
+
+
+
+
+
+
+
+
